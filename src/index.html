@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input dynamic</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title has-text-centered">Input Dinámico</h1>
+        <div id="jsonDiv">
+            
+        </div>
+        <form action="" id="frmUsers">
+            <label class="label">Username</label>
+            <div class="field is-grouped">
+                <div class="control has-icons-left">
+                  <input class="input" name="name" type="text" placeholder="Name" autocomplete="off">
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-user"></i>
+                  </span>
+                </div>
+                <div class="control has-icons-left">
+                    <input class="input" name="lastName" type="text" placeholder="Lastname" autocomplete="off">
+                    <span class="icon is-small is-left">
+                      <i class="fas fa-user"></i>
+                    </span>
+                  </div>
+                  <div class="control">
+                    <button id="btnAdd" type="button" class="button is-danger">
+                        <span class="icon">
+                            <i class="fas fa-plus"></i>
+                        </span>
+                      </button>
+                  </div>
+                  <div class="control">
+                    <button id="btnSave" type="button" class="button is-info">
+                        Save
+                      </button>
+                  </div>
+            </div>
+        </form>
+        <hr>
+        <div id="divElements">
+
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
